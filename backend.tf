@@ -6,7 +6,7 @@
   #}
 #}
 
-resource "aws_s3_bucket" "my-bucket" {
+resource "aws_s3_bucket" "my_bucket" {
     bucket = "test-my-app-bucket-d"
     tags = {
             Name = "test-my-app-bucket-d"
