@@ -8,10 +8,8 @@
 
 resource "aws_s3_bucket" "my_bucket" {
     bucket = "test-my-app-bucket-d"
-    tags = {
-            Name = "test-my-app-bucket-d"
-        }
-}
+  }
+
 
 resource "aws_dynamodb_table" "basic-dynamodb-table" {
   name           = "tws-junoon-state-table"
@@ -23,7 +21,5 @@ resource "aws_dynamodb_table" "basic-dynamodb-table" {
     type = "S"
   }
 
-  tags = {
-    Name        = "tws-junoon-state-table"
-  }
+ 
 }
